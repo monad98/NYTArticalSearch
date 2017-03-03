@@ -15,33 +15,43 @@
     <h1 class="text-center">New York Times Search</h1>
   </div>
   <div class="container">
-    <div class="form">
-      <form>
-        <div class="form-group">
-          <label for="search">Search Term</label>
-          <input type="search" class="form-control" id="search" placeholder="google balloon">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Search Parameters</h3>
+      </div>
+      <div class="panel-body">
+        <div class="form">
+          <form>
+            <div class="form-group">
+              <label for="search">Search Term</label>
+              <input type="search" class="form-control" id="search" placeholder="google, election, ">
+            </div>
+            <div class="form-group">
+              <label for="number">Number of Records to Retrieve</label>
+              <input type="text" class="form-control" id="number" placeholder="10">
+            </div>
+            <div class="form-group">
+              <label for="start-year">Start Year (Optional)</label>
+              <input type="text" class="form-control" id="start-year" placeholder="2016">
+            </div>
+            <div class="form-group">
+              <label for="end-year">End Year (Optional)</label>
+              <input type="text" class="form-control" id="end-year" placeholder="2017">
+            </div>
+          </form>
+          <div>
+            <button id="search-btn" class="btn btn-primary"><i class="glyphicon glyphicon-search"></i> Search</button>
+            <button id="clear-btn" class="btn btn-default"><i class="glyphicon glyphicon-trash"></i> Clear Result</button>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="number">Number of Records to Retrieve</label>
-          <input type="text" class="form-control" id="number" placeholder="10">
-        </div>
-        <div class="form-group">
-          <label for="start-year">Start Year (Optional)</label>
-          <input type="text" class="form-control" id="start-year" placeholder="2016">
-        </div>
-        <div class="form-group">
-          <label for="end-year">Number of Records to Retrieve</label>
-          <input type="text" class="form-control" id="end-year" placeholder="10">
-        </div>
-      </form>
-      <button id="search-btn" class="btn btn-default">Search</button>
+      </div>
     </div>
     <br>
     <div class="panel panel-primary">
       <div class="panel-heading">
         <h3 class="panel-title">Top Articles</h3>
       </div>
-      <div <div id="articles" class="panel-body"></div>
+      <div id="articles" class="panel-body"></div>
     </div>
   </div>
 </body>
